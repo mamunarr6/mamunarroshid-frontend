@@ -3,22 +3,22 @@ import { Link } from "react-router";
 const Header = () => {
   const navLinks = (
     <>
-      <li className="hover:bg-gray-100 hover:text-gray-800 rounded-sm">
+      <li className="hover:bg-gray-100 hover:text-gray-800 rounded font-semibold duration-500 text-base">
         <Link to={"/"}>Home</Link>
       </li>
-      <li className="hover:bg-gray-100 hover:text-gray-800 rounded-sm">
-        <Link to={"/about"}>About</Link>
+      <li className="hover:bg-gray-100 hover:text-gray-800 rounded font-semibold duration-500 text-base">
+        <Link to={"/projects"}>Projects</Link>
       </li>
-      <li className="hover:bg-gray-100 hover:text-gray-800 rounded-sm">
-        <Link to={"/services"}>Services</Link>
+      <li className="hover:bg-gray-100 hover:text-gray-800 rounded font-semibold duration-500 text-base">
+        <Link to={"/about"}>About me</Link>
       </li>
     </>
   );
   return (
-    <div className="bg-gray-600">
-      <div className="lg:w-[1024px] xl:w-[1280px] mx-auto ">
-        <div className="navbar text-white">
-          <div className="navbar-start">
+    <div className="bg-gray-600  ">
+      <div className="lg:w-[1024px] xl:w-[1280px] mx-auto  ">
+        <div className="navbar text-white ">
+          <div className="navbar-start  ">
             <div className="dropdown">
               <div
                 tabIndex={0}
@@ -48,14 +48,14 @@ const Header = () => {
                 {navLinks}
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">MamunArRoshid</a>
+            <a className="cursor-pointer text-xl">MamunArRoshid</a>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">{navLinks}</ul>
           </div>
           <div className="navbar-end">
-            <a className="btn bg-transparent outline-none border-none shadow-none text-white hover:bg-gray-100 hover:text-gray-800">
-              Contact
+            <a className="bg-transparent font-semibold p-2 rounded duration-500 outline-none border-none shadow-none text-white hover:bg-gray-100 hover:text-gray-800 cursor-pointer">
+              Contact me
             </a>
           </div>
         </div>
