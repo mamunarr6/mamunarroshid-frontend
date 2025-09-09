@@ -26,13 +26,25 @@ const Footer = () => {
         <div className="col-span-1">
           <h1 className="lg:text-center text-2xl">Follow Me</h1>
           <div className="flex justify-around items-center mt-5">
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/mamun-ar-roshid/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="./src/assets/icon1.svg" alt="LinkedIn" />
             </a>
-            <a href="">
+            <a
+              href="https://x.com/mamun_ar_roshid"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="./src/assets/icon2.svg" alt="Twitter" />
             </a>
-            <a href="">
+            <a
+              href="https://www.facebook.com/rmb.mamun.1/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="./src/assets/icon3.svg" alt="Facebook" />
             </a>
           </div>

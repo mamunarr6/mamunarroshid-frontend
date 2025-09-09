@@ -2,19 +2,65 @@
   {
     "id": 1,
     "name": "Nutritous Table",
-    "img": "https://i.ibb.co.com/ztrqVsW/nutrition1.pngs",
-    "des": "Apple's latest flagship with A17 Pro chip and titanium body."
+    "img": "https://i.ibb.co.com/ztrqVsW/nutrition1.png",
+    "tools": [
+      "React js",
+      "Tailwind css",
+      "React Router",
+      "Vite as a build tool",
+      "React icons",
+      "React toastify"
+    ],
+    "live_link": "https://nutritious-table.netlify.app/",
+    "github_link": "https://github.com/mamunarr6/nutritious-table",
+    "description": "This website is fully responsive.Actually, this is a recipe-learning website, and all the recipes are full of nutrition. On this website, you can choose the meal depending on nutrition. And also, you can see how many calories you will take after eating that meal."
   },
   {
     "id": 2,
     "name": "Nutritous Table",
     "img": "https://i.ibb.co.com/ztrqVsW/nutrition1.png",
-    "des": "Apple's latest flagship with A17 Pro chip and titanium body."
+    "tools": [
+      "React js",
+      "Tailwind css",
+      "React Router",
+      "Vite as a build tool",
+      "React icons",
+      "React toastify"
+    ],
+    "live_link": "https://nutritious-table.netlify.app/",
+    "github_link": "https://github.com/mamunarr6/nutritious-table",
+    "description": "This website is fully responsive.Actually, this is a recipe-learning website, and all the recipes are full of nutrition. On this website,"
   },
   {
     "id": 3,
     "name": "Nutritous Table",
     "img": "https://i.ibb.co.com/ztrqVsW/nutrition1.png",
-    "des": "Apple's latest flagship with A17 Pro chip and titanium body."
+    "tools": [
+      "React js",
+      "Tailwind css",
+      "React Router",
+      "Vite as a build tool",
+      "React icons",
+      "React toastify"
+    ],
+    "live_link": "https://nutritious-table.netlify.app/",
+    "github_link": "https://github.com/mamunarr6/nutritious-table",
+    "description": "This website is fully responsive.Actually, this is a recipe-learning website, and all the recipes are full of nutrition. On this website, you can choose the meal depending on nutrition. And also, you can see how many calories you will take after eating that meal."
+  },
+  {
+    "id": 4,
+    "name": "Nutritous Table",
+    "img": "https://i.ibb.co.com/ztrqVsW/nutrition1.png",
+    "tools": [
+      "React js",
+      "Tailwind css",
+      "React Router",
+      "Vite as a build tool",
+      "React icons",
+      "React toastify"
+    ],
+    "live_link": "https://nutritious-table.netlify.app/",
+    "github_link": "https://github.com/mamunarr6/nutritious-table",
+    "description": "This website is fully responsive.Actually, this is a recipe-learning website, and all the recipes are full of nutrition. On this website, you can choose the meal depending on nutrition. And also, you can see how many calories you will take after eating that meal."
   }
 ]
