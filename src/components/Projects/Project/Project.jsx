@@ -33,8 +33,11 @@ const Project = ({ project }) => {
             </p>
           </div>
           <p className="flex items-center flex-wrap gap-3">
-            {tools.map((tool) => (
-              <li className="list-none bg-green-100 px-2 py-1 rounded-2xl text-green-800">
+            {tools.map((tool, index) => (
+              <li
+                key={index}
+                className="list-none bg-green-100 px-2 py-1 rounded-2xl text-green-800"
+              >
                 {tool}
               </li>
             ))}

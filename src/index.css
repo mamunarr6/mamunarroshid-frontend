@@ -1,1 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Lora:wght@400..700&display=swap");
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 20px;
+  text-align: center;
+}
 
+.swiper-pagination-bullet-active {
+  background: #16a34a !important;
+}
