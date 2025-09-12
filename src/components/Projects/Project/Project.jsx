@@ -1,7 +1,7 @@
 const Project = ({ project }) => {
   const { name, img, tools, description, live_link, github_link } = project;
   return (
-    <div className="hover:shadow-2xl rounded-2xl duration-300 flex flex-col">
+    <div className="hover:shadow-2xl rounded-2xl duration-300 flex flex-col dark:text-white transition-colors">
       <div className="border-2 rounded-2xl p-2 border-[#abd0c4] grow">
         <div className="overflow-hidden">
           <img
@@ -44,7 +44,9 @@ const Project = ({ project }) => {
               </li>
             ))}
           </p>
-          <p className="text-base my-3 text-body font-inter">{description}</p>
+          <p className="text-base my-3 text-body font-inter dark:text-[#d4d4d4]">
+            {description}
+          </p>
         </div>
       </div>
     </div>

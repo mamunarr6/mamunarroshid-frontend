@@ -50,6 +50,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="text-sm text-center text-white mt-3">
+        &copy; 2025 mamunarroshid.netlify.app . All rights reserved.
+      </p>
     </div>
   );
 };

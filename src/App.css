@@ -6,3 +6,5 @@
 
   --color-body: #5d5d5d;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
