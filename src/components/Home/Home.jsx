@@ -73,7 +73,7 @@ const Home = () => {
       </section>
 
       {/* My Skills Section */}
-      <section className="dark:bg-[#041a38] transition-colors duration-700 py-12">
+      <section className="bg-white dark:bg-[#041a38] transition-colors duration-700 py-12">
         <div className="lg:w-[1024px] mx-auto xl:w-[1280px]">
           <h1 className="text-3xl xl:text-4xl font-bold text-black text-center mb-7 font-lora dark:text-white transition-colors duration-700">
             My Skills
@@ -179,7 +179,7 @@ const Home = () => {
       {/* Project Section */}
       <section
         id="projects"
-        className="dark:bg-[#041a38] transition-colors duration-700 px-2 py-5"
+        className="bg-white dark:bg-[#041a38] transition-colors duration-700 px-2 py-5"
       >
         <div className="lg:w-[1024px] mx-auto xl:w-[1280px] my-12 ">
           <h1 className="text-3xl xl:text-4xl font-bold text-center mt-5 mb-7 font-lora dark:text-white transition-colors duration-700">
@@ -196,7 +196,7 @@ const Home = () => {
       {/* About Me Section */}
       <section
         id="about"
-        className="dark:bg-[#041a38] transition-colors duration-700 py-12 dark:text-white"
+        className="bg-white dark:bg-[#041a38] transition-colors duration-700 py-12 dark:text-white"
       >
         <div className="lg:w-[1024px] mx-auto xl:w-[1280px]">
           <h1 className="text-3xl xl:text-4xl font-semibold text-center font-lora">
@@ -234,7 +234,7 @@ const Home = () => {
       </section>
 
       {/* Contact With Me Section */}
-      <section className="dark:bg-[#041a38] transition-colors duration-700 py-12 dark:text-white">
+      <section className="bg-white dark:bg-[#041a38] transition-colors duration-700 py-12 dark:text-white">
         <div id="contact" className="lg:w-[1024px] mx-auto xl:w-[1280px] my-12">
           <h1 className="text-3xl xl:text-4xl font-semibold font-lora text-center mb-5">
             Get In Touch

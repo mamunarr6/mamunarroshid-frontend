@@ -1,3 +1,5 @@
+import { FaGithub } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div className="bg-gray-600 py-5 px-2">
@@ -31,21 +33,40 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./src/assets/icon1.svg" alt="LinkedIn" />
+              <img
+                className="w-10"
+                src="https://i.ibb.co.com/QFSyYkNY/icon1.png"
+                alt="LinkedIn"
+              />
+            </a>
+            <a
+              href="https://github.com/mamunarr6"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="text-[40px]" />
             </a>
             <a
               href="https://x.com/mamun_ar_roshid"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./src/assets/icon2.svg" alt="Twitter" />
+              <img
+                className="w-10"
+                src="https://i.ibb.co.com/RpJFZtwc/icon2.png"
+                alt="Twitter"
+              />
             </a>
             <a
               href="https://www.facebook.com/rmb.mamun.1/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="./src/assets/icon3.svg" alt="Facebook" />
+              <img
+                className="w-10"
+                src="https://i.ibb.co.com/FqyK5Csd/icon3.png"
+                alt="Facebook"
+              />
             </a>
           </div>
         </div>

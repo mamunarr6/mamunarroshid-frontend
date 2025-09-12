@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
 @theme {
   --font-lora: "Lora", serif;
   --font-inter: "Inter", sans-serif;
