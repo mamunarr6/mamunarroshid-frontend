@@ -41,13 +41,13 @@ const Home = () => {
       <section className="bg-blue-50 px-2 py-10 dark:bg-[#041a38] transition-colors duration-700">
         <div className="lg:w-[1024px] mx-auto xl:w-[1280px] flex flex-col-reverse lg:grid lg:grid-cols-2 justify-between items-center">
           <div className="col-span-1">
-            <h1 className="text-2xl lg:text-6xl mt-1 font-lora dark:text-white transition-colors duration-700">
+            <h1 className="text-2xl lg:text-6xl mt-1 font-lora text-gray-900 dark:text-white transition-colors duration-700">
               Hi,there.
             </h1>
-            <h2 className="text-3xl lg:text-4xl my-3 font-inter dark:text-white transition-colors duration-700">
+            <h2 className="text-3xl lg:text-4xl my-3 font-inter text-gray-900 dark:text-white transition-colors duration-700">
               I am a frontend developer.
             </h2>
-            <p className="text-lg text-[#585858] font-inter dark:text-white transition-colors duration-700">
+            <p className="text-lg text-[#585858] font-inters dark:text-white transition-colors duration-700">
               I am passionate about coding and have been learning development
               since my college years, ensuring creativity and dedication in
               every project.
@@ -182,7 +182,7 @@ const Home = () => {
         className="bg-white dark:bg-[#041a38] transition-colors duration-700 px-2 py-5"
       >
         <div className="lg:w-[1024px] mx-auto xl:w-[1280px] my-12 ">
-          <h1 className="text-3xl xl:text-4xl font-bold text-center mt-5 mb-7 font-lora dark:text-white transition-colors duration-700">
+          <h1 className="text-3xl xl:text-4xl font-bold text-center mt-5 mb-7 font-lora text-gray-900 dark:text-white transition-colors duration-700">
             My Projects
           </h1>
           <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-2">
@@ -196,7 +196,7 @@ const Home = () => {
       {/* About Me Section */}
       <section
         id="about"
-        className="bg-white dark:bg-[#041a38] transition-colors duration-700 py-12 dark:text-white"
+        className="bg-white dark:bg-[#041a38] transition-colors duration-700 py-12 text-gray-900 dark:text-white"
       >
         <div className="lg:w-[1024px] mx-auto xl:w-[1280px]">
           <h1 className="text-3xl xl:text-4xl font-semibold text-center font-lora">
@@ -234,7 +234,7 @@ const Home = () => {
       </section>
 
       {/* Contact With Me Section */}
-      <section className="bg-white dark:bg-[#041a38] transition-colors duration-700 py-12 dark:text-white">
+      <section className="bg-white dark:bg-[#041a38] transition-colors duration-700 py-12 text-gray-900 dark:text-white">
         <div id="contact" className="lg:w-[1024px] mx-auto xl:w-[1280px] my-12">
           <h1 className="text-3xl xl:text-4xl font-semibold font-lora text-center mb-5">
             Get In Touch
@@ -242,7 +242,7 @@ const Home = () => {
           {/* form left */}
           <div className=" flex flex-col lg:flex-row justify-between items-center ">
             <div className="flex flex-col items-center">
-              <p className="text-lg text-body font-inter text-center w-4/5 lg:w-3/4 dark:text-[#d4d4d4] transition-colors duration-700">
+              <p className="text-lg text-body font-inter text-center w-4/5 lg:w-3/4  dark:text-[#d4d4d4] transition-colors duration-700">
                 Feel free to get in touch for professional collaborations,
                 project inquiries, or a friendly conversation.
               </p>

@@ -1,7 +1,7 @@
 const Project = ({ project }) => {
   const { name, img, tools, description, live_link, github_link } = project;
   return (
-    <div className="hover:shadow-2xl rounded-2xl duration-300 flex flex-col dark:text-white transition-colors">
+    <div className="hover:shadow-2xl rounded-2xl duration-300 flex flex-col text-gray-900 dark:text-white transition-colors">
       <div className="border-2 rounded-2xl p-2 border-[#abd0c4] grow">
         <div className="overflow-hidden">
           <img
