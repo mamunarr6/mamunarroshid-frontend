@@ -17,19 +17,18 @@
   },
   {
     "id": 2,
-    "name": "Nutritous Table",
+    "name": "Health Cure Hospital",
     "img": "https://i.ibb.co.com/ztrqVsW/nutrition1.png",
     "tools": [
       "React js",
-      "Tailwind css",
+      "Bootstrap",
+      "React Bootstrap Icon",
       "React Router",
-      "Vite as a build tool",
-      "React icons",
-      "React toastify"
+      "Firebase"
     ],
-    "live_link": "https://nutritious-table.netlify.app/",
-    "github_link": "https://github.com/mamunarr6/nutritious-table",
-    "description": "This website is fully responsive.Actually, this is a recipe-learning website, and all the recipes are full of nutrition. On this website,"
+    "live_link": "https://health-cure-hospital.web.app/",
+    "github_link": "https://github.com/mamunarr6/health-cure-hospital",
+    "description": "This is a hospital website where users can see doctors details and choose the doctor depending on their problem and can see the services and make their appointments depending on the problem. Login system is included here"
   },
   {
     "id": 3,

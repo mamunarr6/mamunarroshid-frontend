@@ -5,9 +5,9 @@ const Footer = () => {
         <div className="col-span-1 ">
           <h1 className="text-2xl">About Me</h1>
           <p className="text-lg mt-1">
-            I am passionate to code. I am knowing and learnig new things about
-            developement from my college life.So, I can garuntee you that your
-            project will be very creative and wishful.
+            I am passionate to do code. I am knowing and learnig new things
+            about developement from my college life.So, I can garuntee you that
+            your project will be very creative and wishful.
           </p>
         </div>
         <div className="col-span-1">

@@ -12,13 +12,15 @@ const Project = ({ project }) => {
         </div>
         <div>
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold my-4">{name}</h1>
-            <p className="flex items-center gap-3">
+            <h1 className="text-lg lg:text-xl font-semibold my-4 font-inter">
+              {name}
+            </h1>
+            <p className="flex items-center gap-1 lg:gap-3">
               <a
                 href={live_link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-md border-2 border-gray-600 hover:bg-gray-600 hover:text-white px-2 py-1 rounded-xl font-semibold cursor-pointer duration-300"
+                className="text-sm border-2 border-gray-600 hover:bg-gray-600 hover:text-white px-1 lg:px-2 py-1 rounded-xl font-semibold cursor-pointer duration-300 font-inter"
               >
                 Live Site
               </a>
@@ -26,7 +28,7 @@ const Project = ({ project }) => {
                 href={github_link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-md border-2 border-gray-600 hover:bg-gray-600 hover:text-white px-2 py-1 rounded-xl font-semibold cursor-pointer duration-300"
+                className="text-sm border-2 border-gray-600 hover:bg-gray-600 hover:text-white px-2 py-1 rounded-xl font-semibold cursor-pointer duration-300 font-iner"
               >
                 GitHub
               </a>
@@ -36,15 +38,13 @@ const Project = ({ project }) => {
             {tools.map((tool, index) => (
               <li
                 key={index}
-                className="list-none bg-green-100 px-2 py-1 rounded-2xl text-green-800"
+                className="list-none bg-green-100 px-2 py-1 rounded-2xl text-green-800 font-inter"
               >
                 {tool}
               </li>
             ))}
           </p>
-          <p className="text-base my-3 font-light text-gray-800">
-            {description}
-          </p>
+          <p className="text-base my-3 text-body font-inter">{description}</p>
         </div>
       </div>
     </div>

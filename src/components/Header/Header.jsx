@@ -12,6 +12,9 @@ const Header = () => {
       <li className="hover:bg-gray-100 hover:text-gray-800 rounded font-semibold duration-500 text-base">
         <Link to={"/about"}>About me</Link>
       </li>
+      <li className="hover:bg-gray-100 hover:text-gray-800 rounded font-semibold duration-500 text-base ">
+        <Link to={"/about"}>Contact me</Link>
+      </li>
     </>
   );
   return (
@@ -43,7 +46,7 @@ const Header = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black"
               >
                 {navLinks}
               </ul>
@@ -54,8 +57,12 @@ const Header = () => {
             <ul className="menu menu-horizontal px-1">{navLinks}</ul>
           </div>
           <div className="navbar-end">
-            <a className="bg-transparent font-semibold p-2 rounded duration-500 outline-none border-none shadow-none text-white hover:bg-gray-100 hover:text-gray-800 cursor-pointer">
-              Contact me
+            <a
+              href="https://drive.usercontent.google.com/u/0/uc?id=1C9Ieyrg12bkuEu6y5b49TmarY0w1ct9a&export=download"
+              target="blank"
+              className="text-base font-semibold cursor-pointer px-3 py-1 bg-[#21a366] text-white rounded-3xl font-inter hover:bg-transparent border-2 border-[#21a366] hover:text-[#21a366] duration-300"
+            >
+              Resume
             </a>
           </div>
         </div>

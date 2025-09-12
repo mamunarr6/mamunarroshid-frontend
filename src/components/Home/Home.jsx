@@ -4,37 +4,66 @@ import useProjects from "../../hooks/useProjects";
 import Project from "../Projects/Project/Project";
 
 // Import Swiper styles
+import { useState } from "react";
+import { MdEmail } from "react-icons/md";
 import "swiper/css";
 import "swiper/css/pagination";
 
 const Home = () => {
   const projects = useProjects();
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+    // console.log(e.target);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    alert("Thank you! Your message has been submitted.");
+
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  };
+
   return (
     <>
       {/* banner section */}
-      <section className="bg-blue-50 px-2">
+      <section className="bg-blue-50 px-2 py-10">
         <div className="lg:w-[1024px] mx-auto xl:w-[1280px] flex flex-col-reverse lg:grid lg:grid-cols-2 justify-between items-center">
           <div className="col-span-1">
             <h1 className="text-2xl lg:text-6xl mt-1 font-lora">Hi,there.</h1>
-            <h2 className="text-3xl lg:text-4xl mt-2 font-inter">
+            <h2 className="text-3xl lg:text-4xl my-3 font-inter">
               I am a frontend developer.
             </h2>
-            <h3 className="text-xl lg:text-2xl mt-3 mb-5 font-inter">
-              Make your product, Grab your future.
-            </h3>
-            <a
-              href="https://drive.usercontent.google.com/u/0/uc?id=1C9Ieyrg12bkuEu6y5b49TmarY0w1ct9a&export=download"
-              target="blank"
-              className="text-xl font-semibold cursor-pointer px-4 py-2 bg-[#21a366] text-white rounded-3xl font-inter hover:bg-transparent border-2 border-[#21a366] hover:text-[#21a366] duration-300"
-            >
-              Download Resume
-            </a>
+            <p className="text-lg text-[#585858] font-inter">
+              I am passionate about coding and have been learning development
+              since my college years, ensuring creativity and dedication in
+              every project.
+            </p>
+            <p className="mt-7">
+              <a
+                href="https://drive.usercontent.google.com/u/0/uc?id=1C9Ieyrg12bkuEu6y5b49TmarY0w1ct9a&export=download"
+                target="blank"
+                className="text-xl font-semibold cursor-pointer px-4 py-2 bg-[#21a366] text-white rounded-3xl font-inter hover:bg-transparent border-2 border-[#21a366] hover:text-[#21a366] duration-300"
+              >
+                Download Resume
+              </a>
+            </p>
           </div>
-          <div className="col-span-1">
+          <div className="col-span-1 flex justify-end">
             <img
-              className="w-full"
-              src="https://i.ibb.co/238FVWk5/banner-Img.png"
+              className="w-3/4"
+              src="https://i.ibb.co.com/8GwgPZX/banner.png"
               alt=""
             />
           </div>
@@ -81,37 +110,37 @@ const Home = () => {
         >
           <SwiperSlide>
             <div className="border-2 border-green-200 rounded-2xl px-3 py-2 flex flex-col items-center">
-              <img src="./src/assets/skills/html.svg" alt="" />
+              <img src="https://i.ibb.co.com/WNBHD51h/html.png" alt="" />
               <p>HTML5</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="border-2 border-green-200 rounded-2xl px-3 py-2 flex flex-col items-center">
-              <img src="./src/assets/skills/css.svg" alt="" />
+              <img src="https://i.ibb.co.com/N6sLwvhj/css.png" alt="" />
               <p>CSS3</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="border-2 border-green-200 rounded-2xl px-3 py-2 flex flex-col items-center">
-              <img src="./src/assets/skills/bootstrap.svg" alt="" />
+              <img src="https://i.ibb.co.com/CTNmMx7/bootstrap.png" alt="" />
               <p>Bootstrap</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="border-2 border-green-200 rounded-2xl px-3 py-2 flex flex-col items-center">
-              <img src="./src/assets/skills/tailwind.svg" alt="" />
+              <img src="https://i.ibb.co.com/FbRwx9Sn/tailwind.png" alt="" />
               <p>Tailwind Css</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="border-2 border-green-200 rounded-2xl px-3 py-2 flex flex-col items-center">
-              <img src="./src/assets/skills/javascript.svg" alt="" />
+              <img src="https://i.ibb.co.com/zWTHjvjq/javascript.png" alt="" />
               <p>Javascript</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="border-2 border-green-200 rounded-2xl px-3 py-2 flex flex-col items-center">
-              <img src="./src/assets/skills/react.svg" alt="" />
+              <img src="https://i.ibb.co.com/ccSm4Rtg/react.png" alt="" />
               <p>React Js</p>
             </div>
           </SwiperSlide>
@@ -119,7 +148,7 @@ const Home = () => {
             <div className="border-2 border-green-200 rounded-2xl px-3 py-2 flex flex-col items-center">
               <img
                 className="w-[144px] h-[144px]"
-                src="./src/assets/skills/nodejs.svg"
+                src="https://i.ibb.co.com/gb953D0f/nodejs.png"
                 alt=""
               />
               <p>Node Js</p>
@@ -127,13 +156,13 @@ const Home = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="border-2 border-green-200 rounded-2xl px-3 py-2 flex flex-col items-center">
-              <img src="./src/assets/skills/express.svg" alt="" />
+              <img src="https://i.ibb.co.com/bj2Bv4Wk/express.png" alt="" />
               <p>Express Js</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="border-2 border-green-200 rounded-2xl px-3 py-2 flex flex-col items-center">
-              <img src="./src/assets/skills/mongodb.png" alt="" />
+              <img src="https://i.ibb.co.com/217hYCsY/mongodb.png" alt="" />
               <p>Mongo DB</p>
             </div>
           </SwiperSlide>
@@ -141,14 +170,16 @@ const Home = () => {
       </section>
 
       {/* Project Section */}
-      <section className="lg:w-[1024px] mx-auto xl:w-[1280px] my-12 ">
-        <h1 className="text-3xl xl:text-4xl font-bold text-center mt-5 mb-7 font-lora">
-          My Projects
-        </h1>
-        <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-2">
-          {projects.map((project) => (
-            <Project key={project.id} project={project}></Project>
-          ))}
+      <section className=" px-2 py-5">
+        <div className="lg:w-[1024px] mx-auto xl:w-[1280px] my-12 ">
+          <h1 className="text-3xl xl:text-4xl font-bold text-center mt-5 mb-7 font-lora">
+            My Projects
+          </h1>
+          <div className="grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-2">
+            {projects.map((project) => (
+              <Project key={project.id} project={project}></Project>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -157,16 +188,16 @@ const Home = () => {
         <h1 className="text-3xl xl:text-4xl font-semibold text-center font-lora">
           About Me
         </h1>
-        <div className="grid grid-cols-3 justify-between items-center gap-8">
-          <div className="col-span-2">
+        <div className="grid  lg:grid-cols-3 justify-between items-center lg:gap-8 px-2">
+          <div className="lg:col-span-2">
             <h3 className="text-2xl font-semibold font-lora">
               A Passionate Learning Developer.
             </h3>
             <p className="my-5 text-lg whitespace-pre-wrap font-inter text-body">
-              Hi, I am Mamun Ar Roshid, a React-based front-end developer.
-              Although I don&apos;t come from a CSE background, my eagerness to
-              learn new technologies led me to this field and now I truly love
-              it.
+              Hi,I am Mamun Ar Roshid, a passionate React-based front-end
+              developer. Although I don&apos;t come from a CSE background, my
+              eagerness to learn new technologies led me to this field and now I
+              truly love it.
             </p>
             <p className="my-5 text-lg whitespace-pre-wrap font-inter text-body">
               I bring solid expertise in front-end technologies including HTML,
@@ -177,10 +208,10 @@ const Home = () => {
               such as Firebase, JWT, Git, and GitHub.
             </p>
           </div>
-          <div className="col-span-1 flex flex-col items-end">
+          <div className="col-span-1 flex flex-col items-center justify-center lg:items-end">
             <img
-              className="w-3/4 rounded-2xl"
-              src="./src/assets/aboutme.svg"
+              className="lg:w-3/4 w-full rounded-2xl"
+              src="https://i.ibb.co.com/zWJj5GCY/aboutme.jpg"
               alt=""
             />
           </div>
@@ -188,10 +219,84 @@ const Home = () => {
       </section>
 
       {/* Contact With Me Section */}
-      <section className="lg:w-[1024px] mx-auto xl:w-[1280px] my-12 ">
-        <h1 className="text-3xl xl:text-4xl font-semibold font-lora text-center">
-          Contact With Me
+      <section className="lg:w-[1024px] mx-auto xl:w-[1280px] my-12">
+        <h1 className="text-3xl xl:text-4xl font-semibold font-lora text-center mb-5">
+          Get In Touch
         </h1>
+        {/* form left */}
+        <div className=" flex justify-between items-center">
+          <div className="flex flex-col items-center">
+            <p className="text-lg text-body font-inter text-center w-3/4">
+              Feel free to get in touch for professional collaborations, project
+              inquiries, or a friendly conversation.
+            </p>
+            <p className="flex justify-center items-center gap-2 mt-2 mb-3 text-body">
+              <MdEmail className="text-[#21a366] text-2xl " />
+              mamunarr6@gmail.com
+            </p>
+            <img className="w-3/6 flex" src="./src/assets/e2.png" alt="" />
+          </div>
+          {/* form right */}
+          <div className=" items-center w-3/6 ">
+            <form
+              action="submit"
+              onSubmit={handleSubmit}
+              className="flex flex-col  items-center gap-3 font-inter w-full my-5"
+            >
+              <div className="flex flex-col gap-2 mb-3 w-full">
+                <label htmlFor="name" className="pl-2 text-base font-semibold">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  onChange={handleChange}
+                  value={formData.name}
+                  placeholder="Your full name"
+                  className="outline-none px-3 py-2 text-base bg-green-100 rounded-3xl w-full"
+                  required
+                />
+              </div>
+              <div className="flex flex-col  gap-2 mb-3 w-full">
+                <label htmlFor="email" className="pl-2 text-base font-semibold">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  onChange={handleChange}
+                  value={formData.email}
+                  placeholder="Your valid email"
+                  className="outline-none px-3 py-2 text-base bg-green-100 rounded-3xl w-full"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-2 mb-3 w-full">
+                <label
+                  htmlFor="message"
+                  className="pl-2 text-base font-semibold"
+                >
+                  Message
+                </label>
+                <textarea
+                  type="text"
+                  name="message"
+                  onChange={handleChange}
+                  value={formData.message}
+                  placeholder="Message"
+                  className="outline-none px-3 py-2 text-base bg-green-100 rounded-3xl w-full"
+                  required
+                />
+              </div>
+              <button
+                className="w-full bg-[#21a366] text-white py-1 rounded-2xl border-2 border-[#21a366] text-lg font-semibold hover:bg-transparent hover:text-[#21a366] duration-300"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </>
   );
